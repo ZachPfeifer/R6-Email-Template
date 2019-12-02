@@ -3,6 +3,6 @@
 
 <p align="center">
   <img src="./assets/R6-Email.png" width="350" title="hover text">
-  <img src="./assets/R6-Email.png" width="350" alt="accessibility text">
+  <!-- <img src="./assets/R6-Email.png" width="350" alt="accessibility text"> -->
 </p>
 <!-- ![Alt Text](./assets/R6-Email.png) -->
