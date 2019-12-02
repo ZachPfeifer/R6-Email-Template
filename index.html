@@ -57,8 +57,16 @@
     }
 
     #container {
-      background-color: #c8cccd;
-      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background:
+        /* top, transparent red */
+        linear-gradient(rgba(255, 255, 255, 0.45),
+          rgba(72, 84, 98, 0.0)),
+        /* bottom, image */
+        url(https://i.pinimg.com/originals/8c/3e/70/8c3e70a63646b6825a7f200647fe9806.jpg);
+      background-size: cover;
+      text-align: center;
 
     }
 
@@ -76,7 +84,7 @@
     #full-img {
       max-width: 100%;
       width: 100%;
-      padding: 2em 0 0 0;
+      /* padding: 2em 0 0 0; */
       overflow: hidden;
     }
 
@@ -85,6 +93,13 @@
       height: 17em;
       max-width: 100%;
       float: none;
+    }
+
+    .bottom {
+      /* width: 35em;
+      height: 17em;
+      max-width: 100%;
+      float: none; */
     }
 
     .username {
@@ -112,11 +127,25 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 2em;
     }
 
-    /* .text-box {
-      background-color: #b2bbc4;
-    } */
+    .text-box {
+      height: 100%;
+      background:
+        /* top, transparent red */
+        linear-gradient(rgba(255, 255, 255, 0.45), rgba(72, 84, 98, 0.0)),
+        /* bottom, image */
+        url(/assets/download.png);
+      background-size: auto;
+      max-width: 100%;
+      width: 100%;
+      padding: 3em 0em 2em 0em;
+      overflow: auto;
+      text-align: center;
+      float: left;
+      color: white;
+    }
 
     .two-col {
       float: left;
@@ -130,8 +159,6 @@
       margin: auto;
       width: 90%;
     }
-
-
 
 
     .stars-container {
@@ -200,6 +227,13 @@
     .stars-100:after {
       width: 100;
     }
+
+    .line {
+      clear: both;
+      height: 1em;
+      background-color: #2f598dad;
+      opacity: 0.5;
+    }
   </style>
 </head>
 
@@ -237,7 +271,8 @@
       </div>
     </div>
     <!-- BOTTOM -->
-    <div class="bottom text-box">
+    <div id="bottom">
+      <div class="line"></div>
       <div class="one-col">
         <h6>
           THE 2ND ROUND WAS ACTUALLY YOUR BEST, DESPITE LOSING. YOU DIED 2 MINUTES AND 52 SECONDS
@@ -246,17 +281,20 @@
           TWO OPPONENTS WITH THERMITE. BUT YOUR TEAM EXPERIENCED A DEFEAT IN THAT ROUND AFTER BEING ELIMINATED.</h6>
       </div>
       <img id="full-img" src="./assets/kda-R6.png" alt="">
-      <h6 class="text-box">
-        THIS EMAIL IS IN BETA, WE WOULD LIKE TO GATHER YOUR OPINION TO KEEP
-        IMPROVING OUR SERVICE TO YOU. PLEASE TAKE A MOMENT TO RATE THIS EMAIL.
-      </h6>
-      <p>DO YOU LIKE THIS EMAIL? <span class="stars-container stars-90">★★★★★</span>
-      </p>
+      <div class="text-box">
+        <h6>
+          THIS EMAIL IS IN BETA, WE WOULD LIKE TO GATHER YOUR OPINION TO KEEP
+          IMPROVING OUR SERVICE TO YOU. PLEASE TAKE A MOMENT TO RATE THIS EMAIL.
+          <p></p>
+          <p>DO YOU LIKE THIS EMAIL? <span class="stars-container stars-90">★★★★★</span>
+        </h6>
+        </p>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <footer>
-      <img src="./assets/Company-R6.png" alt="">
+      <img id="full-img" src="./assets/Company-R6.png" alt="">
       <hr />
       <a>
         <small>
