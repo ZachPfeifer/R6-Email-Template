@@ -1,3 +1,3 @@
 # R6-Email-Template
-Here is a clone of a email I regularly receive 
-![alt text](./assets/R6-Email.png)
+<p>This is the original image of the email I decided to Clone</p> 
+![Optional Text](./assets/R6-Email.png)
